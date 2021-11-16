@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Use correct character set. -->
+  <meta charset="utf-8">
+  <!-- Tell IE to use the latest, best version. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>GeoKrasnale</title>
+  <script src="../../Build/Cesium/Cesium.js"></script>
+
+  <style>
+      @import url(../../Build/Cesium/Widgets/widgets.css);
+      @import url(style.css);
+  </style>
+</head>
+
+
+<body>
+ 
+  <div id="cesiumContainer">
+      <div id="oknoLegenda">
+          <div id="Legenda"> Legenda </div>
+          <div class="scroll">
+          <p> Znaczenie kolorów pinezek</p>
+          <ul>
+              <li><span style="background: #696969"></span><font family='Times' style='italic' size='2' color='black' >Stare Miasto</font></li>
+              <li><span style="background: #696969"></span><font family='Times' style='italic' size='2' color='black' >Stare Miasto</font></li>
+              <li><span style="background: #696969"></span><font family='Times' style='italic' size='2' color='black' >Stare Miasto</font></li>
+              <li><span style="background: #696969"></span><font family='Times' style='italic' size='2' color='black' >Stare Miasto</font></li>
+              <li><span style="background: #696969"></span><font family='Times' style='italic' size='2' color='black' >Stare Miasto</font></li>
+              <li><span style="background: #696969"></span><font family='Times' style='italic' size='2' color='black' >Stare Miasto</font></li>
+              <li><span style="background: #696969"></span><font family='Times' style='italic' size='2' color='black' >Stare Miasto</font></li>
+              <li><span style="background: #696969"></span><font family='Times' style='italic' size='2' color='black' >Stare Miasto</font></li>
+          </ul>
+          <p> Znaczenie tła w zakładce 'Znajdź model'</p>
+          <ul>
+              <li><span style="background: #696969"></span><font family='Times' style='italic' size='2' color='black' >Stare Miasto</font></li>
+              <li><span style="background: #696969"></span><font family='Times' style='italic' size='2' color='black' >Stare Miasto</font></li>
+              
+          </ul>
+          </div>
+      </div>
+  </div>
+  <div class="toolbar">    
+        <div class="button" onclick="window.open(href='http://krasnale.pl'); "><span>Oficjalny serwis </span></div>
+        
+        <div class="button2" onclick="show()"><span>Pokaż/ukryj pinezki</span></div>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Znajdź model</button>
+          <div class="dropdown-content">
+            <a onclick="pokazKrasnala(17.0587140, 51.0950060, 100)">100matolog</a>          
+            <a onclick="pokazKrasnala(17.0215360, 51.1347470, 100)">Agorek</a>
+            <a onclick="pokazKrasnala(16.9844940, 51.1128114, 100)">Alpinki </a>
+            <a onclick="pokazKrasnala(17.0316723, 51.1095810, 100)">Ambasadorzy kampanii 'Wrocław bez barier'</a>
+            <a id="mod" onclick="pokazKrasnala(17.0350417, 51.1085694, 100)">Meloman</a>
+            <a onclick="pokazKrasnala(17.0325212, 51.1075476, 100)">Papa Krasnal</a>
+            <a id="mod" onclick="pokazKrasnala(17.0631220, 51.1133100, 100)">Tralalalek</a>
+          </div>
+        </div>
+        
+        <div class="buttonLegenda" onclick="pokazLegende()"><span>Legenda</span></div>
+               
+    </div>
+        
+  
+  <div class="social">
+      <div class="fa fa-facebook" onclick="window.open(href='https://www.facebook.com/WroclawskieKrasnale/')"></div>
+      <div class="fa fa-twitter" onclick="window.open(href='https://twitter.com/Zyczliwek')"></div>
+  </div>
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+   
+  <script>
+      
+// wyszukiwanie w lupce GEOCODER    
+function OpenStreetMapNominatimGeocoder() {
+}
+      
+OpenStreetMapNominatimGeocoder.prototype.geocode = function (input) {
+    var endpoint = 'https://nominatim.openstreetmap.org/search';
+    var resource = new Cesium.Resource({
+        url: endpoint,
+        queryParameters: {
+            format: 'json',
+            q: input
+        }
+    });
+    return resource.fetchJson()
+        .then(function (results) {
+            var bboxDegrees;
+            return results.map(function (resultObject) {
+                bboxDegrees = resultObject.boundingbox;
+                return {
+                    displayName: resultObject.display_name,
+                    destination: Cesium.Rectangle.fromDegrees(
+                        bboxDegrees[2],
+                        bboxDegrees[0],
+                        bboxDegrees[3],
+                        bboxDegrees[1]
+                    )
+                };
+            });
+        });
+};
+
+      
+//pokaż/ukryj pinezki
+     var dataSource1 = new Cesium.GeoJsonDataSource();
+    dataSource1.load('pinezki.geojson');
+   
+      
+      function show(){
+          
+          dataSource1.show =! dataSource1.show;
+          
+      }     
+      
+//legenda 
+      function pokazLegende(){
+          
+        var a =   document.getElementById("oknoLegenda");
+          
+         if (a.style.visibility==="visible"){
+             a.style.visibility="hidden";
+         } 
+          else {
+            
+              a.style.visibility="visible";
+         }
+      }
+          
+//dodanie widoku startowego (określony prostokąt)      
+var extent = Cesium.Rectangle.fromDegrees(16.90,51.00,17.10,51.20);
+
+Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent;
+Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;      
+      
+      
+      
+      
+   var viewer = new Cesium.Viewer('cesiumContainer', {
+         imageryProvider : Cesium.createOpenStreetMapImageryProvider({
+        url : 'https://a.tile.openstreetmap.org/'
+    }), 
+        shouldAnimate : true,
+        animation: false,
+        baseLayerPicker : false,
+        shadows: false,
+        navigationHelpButton: false,
+        timeline: false,
+        sceneModePicker: false,
+        selectionIndicator: false, 
+        geocoder: new
+       OpenStreetMapNominatimGeocoder()
+    });
+      
+    viewer.dataSources.add(dataSource1);
+       
+      
+//dodawanie modeli czml
+var dataSourcePromise = viewer.dataSources.add(Cesium.CzmlDataSource.load('modele/modele.czml'));
+      
+// Pokaż model
+    function pokazKrasnala(x,y,z) {
+        
+        {
+        
+            viewer.camera.flyTo({
+        destination : Cesium.Cartesian3.fromDegrees(x,y,z),
+        maximumHeight: 100,
+        duration: 2,
+    });
+     
+    } 
+        
+        dataSource1.show = true;        
+    }
+      
+  </script>
+</body>
+</html>

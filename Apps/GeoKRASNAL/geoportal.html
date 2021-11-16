@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Use correct character set. -->
+  <meta charset="utf-8">
+  <!-- Tell IE to use the latest, best version. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>GeoKrasnale</title>
+  <script src="../../Build/Cesium/Cesium.js"></script>
+
+  <style>
+      @import url(../../Build/Cesium/Widgets/widgets.css);
+      @import url(style.css);
+  </style>
+</head>
+
+
+<body>
+ 
+  <div id="cesiumContainer">
+     
+      <div id="oknoElipsa">
+        <div class="naglowek">
+         <div id="Zamknij2" onclick="ukryjElipsa()">X</div>
+          <form id="elipsa" action="">
+              <fieldset>
+                <legend>Parametry okręgu:</legend>
+                  <p>JAK NARYSOWAĆ OKRĄG:</p><p> 1. Podaj promień okręgu <br> 2. Użyj przycisku wykonaj <br> 3. Użyj środkowego klawisza myszy i wybierz punkty <br> 4. Aby usunąć okręgi użyj prawego klawisza myszy</p>
+                Promień okręgu [m]:<br>
+                <input id="input_value" type="text">
+                <br>
+                  <div id="buttonWykonaj" onclick="elipsa()">Wykonaj</div>
+              </fieldset>
+        </form>
+        </div>
+        
+      </div>     
+     
+      <div id="oknoLegenda">
+         <div class="naglowek">
+         <div id="Zamknij" onclick="ukryjLegende()">X</div>
+          <div id="Legenda"> Legenda </div>
+          
+        </div>
+          <div class="scroll">
+          <p> Znaczenie kolorów pinezek</p>
+          <ul>
+              <li><span style="background: #660033"></span><font family='Times' style='italic' size='2' color='black' >Huby</font></li>
+              <li><span style="background: #B8860B"></span><font family='Times' style='italic' size='2' color='black' >Muchobór Mały</font></li>
+              <li><span style="background: #2F4F4F"></span><font family='Times' style='italic' size='2' color='black' >Przedmieście Oławskie</font></li>
+              <li><span style="background: #009999"></span><font family='Times' style='italic' size='2' color='black' >Przedmieście Świdnickie</font></li>
+              <li><span style="background: #BC8F8F"></span><font family='Times' style='italic' size='2' color='black' >Różanka</font></li><br>
+              <li><span style="background: #696969"></span><font family='Times' style='italic' size='2' color='black' >Stare Miasto</font></li>
+              <li><span style="background: #0033FF"></span><font family='Times' style='italic' size='2' color='black' >Szczepin</font></li>
+              
+          </ul>
+          <p> Znaczenie tła w zakładce 'Krasnale'</p>
+          <ul>
+              <li><span style="background: #4CAF50"></span><font family='Times' style='italic' size='2' color='black' >model</font></li><br>
+              <li><span style="background: ghostwhite"></span><font family='Times' style='italic' size='2' color='black' >pinezka</font></li>
+              
+          </ul>
+          </div>
+      </div>
+  </div>
+  <div class="toolbar">
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content2">
+                <a onclick="pokazLegende()">Legenda</a>
+                <a onclick="show()">Pokaż/ukryj pinezki</a>
+                <a onclick="show_elipsa()">Rysowanie okręgu</a>
+            </div>
+            
+        </div>
+        <div class="dropdown">
+        <button class="dropbtn_serwis" onclick="window.open(href='http://krasnale.pl'); "><span>Oficjalny serwis</span></button>
+        </div>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Krasnale</button>
+          <div class="dropdown-content">
+            <a onclick="pokazKrasnala(17.0587140, 51.0950060, 100)">100matolog</a>          
+            <a onclick="pokazKrasnala(17.0215360, 51.1347470, 100)">Agorek</a>
+            <a onclick="pokazKrasnala(16.9844940, 51.1128114, 100)">Alpinki </a>
+            <a onclick="pokazKrasnala(17.0316723, 51.1095810, 100)">Ambasadorzy kampanii 'Wrocław bez barier'</a>
+            <a onclick="pokazKrasnala(17.0813110, 51.0926610, 100)">Amrest</a>
+            <a onclick="pokazKrasnala(17.0194280, 51.1109360, 100)">Anka</a>
+            <a onclick="pokazKrasnala(17.0525, 51.1163889, 100)">Antonio Okulista</a>
+            <a onclick="pokazKrasnala(17.0304140, 51.1021280, 100)">Antykwarek</a>
+            <a onclick="pokazKrasnala(17.0331852, 51.0907513, 100)">Aquaparczki</a>
+            <a id="mod" onclick="pokazKrasnala(17.0381060, 51.1081640, 50)">BEAnka</a>
+            <a id="mod" onclick="pokazKrasnala(17.0261092, 51.0904947, 50)">Ekonomek</a>
+            <a id="mod" onclick="pokazKrasnala(17.0350417, 51.1085694, 50)">Grajek <br> i Meloman</a>
+            <a onclick="pokazKrasnala(17.0325212, 51.1075476, 100)">Papa Krasnal</a>
+            <a id="mod" onclick="pokazKrasnala(17.1255390, 51.1538500, 50)">Rejestruś</a>
+            <a id="mod" onclick="pokazKrasnala(17.0324273, 51.1125361, 50)">Tralalalek</a>
+            <a id="mod" onclick="pokazKrasnala(17.0307613, 51.1111405, 50)">WrocLovek</a>
+          </div>
+        </div>
+        
+        
+               
+    </div>
+        
+  
+  <div class="social">
+      <div class="fa fa-facebook" onclick="window.open(href='https://www.facebook.com/WroclawskieKrasnale/')"></div>
+      <div class="fa fa-twitter" onclick="window.open(href='https://twitter.com/Zyczliwek')"></div>
+  </div>
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+   
+  <script>
+      
+// wyszukiwanie w lupce GEOCODER    
+function OpenStreetMapNominatimGeocoder() {
+}
+      
+OpenStreetMapNominatimGeocoder.prototype.geocode = function (input) {
+    var endpoint = 'https://nominatim.openstreetmap.org/search';
+    var resource = new Cesium.Resource({
+        url: endpoint,
+        queryParameters: {
+            format: 'json',
+            q: input
+        }
+    });
+    return resource.fetchJson()
+        .then(function (results) {
+            var bboxDegrees;
+            return results.map(function (resultObject) {
+                bboxDegrees = resultObject.boundingbox;
+                return {
+                    displayName: resultObject.display_name,
+                    destination: Cesium.Rectangle.fromDegrees(
+                        bboxDegrees[2],
+                        bboxDegrees[0],
+                        bboxDegrees[3],
+                        bboxDegrees[1]
+                    )
+                };
+            });
+        });
+};
+
+      
+//pokaż/ukryj pinezki
+     var dataSource1 = new Cesium.GeoJsonDataSource();
+    dataSource1.load('pinezki.geojson');
+   
+      
+      function show(){
+          
+          dataSource1.show =! dataSource1.show;
+          
+      }     
+
+      
+//legenda 
+      function pokazLegende(){
+          
+        var a =   document.getElementById("oknoLegenda");
+          
+          a.style.visibility="visible"
+          
+      }
+      
+      function ukryjLegende(){
+          var a =   document.getElementById("oknoLegenda");
+            
+            
+              a.style.visibility="hidden";
+         
+      }
+          
+//dodanie widoku startowego (określony prostokąt)      
+var extent = Cesium.Rectangle.fromDegrees(16.90,51.00,17.10,51.20);
+
+Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent;
+Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;      
+      
+      
+   var viewer = new Cesium.Viewer('cesiumContainer', {
+        imageryProvider : Cesium.createOpenStreetMapImageryProvider({
+        url : 'https://a.tile.openstreetmap.org/'
+    }), 
+        shouldAnimate : true,
+        animation: false,
+        baseLayerPicker : false,
+        shadows: false,
+        navigationHelpButton: true,
+        timeline: false,
+        sceneModePicker: false,
+        selectionIndicator: false, 
+        geocoder: new
+       OpenStreetMapNominatimGeocoder()
+    });
+      
+    viewer.dataSources.add(dataSource1);
+
+//pojawianie się elipsy
+function show_elipsa(){
+    var a =   document.getElementById("oknoElipsa");
+          
+         a.style.visibility="visible"
+      
+}
+
+//ukrywanie się elipsy
+function ukryjElipsa(){
+    var a =   document.getElementById("oknoElipsa");
+     
+        a.style.visibility="hidden";        
+      
+}
+      
+//elipsa o określonym promieniu, środek w miejscu kliknięcia
+function elipsa (){
+    
+            
+    
+      var screenSpaceEventHandler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+
+      var tablica = [];
+
+// Event handler for middle click
+      screenSpaceEventHandler.setInputAction(function(click) {
+
+    // get position  of click
+    var clickPosition = viewer.camera.pickEllipsoid(click.position);
+
+        // convert mouse and click position to lon/lat coordinates and add them to the array
+      
+        var cartographicClick = Cesium.Ellipsoid.WGS84.cartesianToCartographic(clickPosition);
+
+        var x = Cesium.Math.toDegrees(cartographicClick.longitude);
+        var y = Cesium.Math.toDegrees(cartographicClick.latitude);
+        
+     
+		var greenEllipse = viewer.entities.add({
+    position: Cesium.Cartesian3.fromDegrees(x, y),
+    name : 'Okrąg wskazujący modele i pinezki w zadanym promieniu',
+    ellipse : {
+        semiMinorAxis : document.getElementById('input_value').value,
+        semiMajorAxis : document.getElementById('input_value').value,
+        material : Cesium.Color.GREEN.withAlpha(0.4)
+    }
+});
+
+    tablica.push(greenEllipse);
+
+        }, Cesium.ScreenSpaceEventType.MIDDLE_CLICK);
+
+//usuwanie elipsy na prawy click
+      screenSpaceEventHandler.setInputAction(function(click) {
+
+          for (var i=0; i < tablica.length; i++) {
+            viewer.entities.remove(tablica[i]);
+            }
+      },Cesium.ScreenSpaceEventType.RIGHT_CLICK);
+};
+      
+//dodawanie modeli czml
+      var dataSourcePromise = viewer.dataSources.add(Cesium.CzmlDataSource.load('modele/modele.czml'));
+      
+// Pokaż model
+    function pokazKrasnala(x,y,z) {
+        
+        {
+            viewer.camera.flyTo({
+        destination : Cesium.Cartesian3.fromDegrees(x,y,z),
+        maximumHeight: 100,
+        duration: 2,
+    });
+     
+    } 
+        
+        dataSource1.show = true;        
+    }
+      
+  </script>
+</body>
+</html>

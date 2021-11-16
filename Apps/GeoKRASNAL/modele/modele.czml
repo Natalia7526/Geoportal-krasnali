@@ -1,0 +1,94 @@
+[{
+    "id" : "document",
+    "name" : "CZML Model",
+    "version" : "1.0"
+},
+{
+    
+    "id" : "Tralalalek",
+    "name" : "Tralalalek",
+    
+    "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'>Adres</font></B></td><td><font face='Courier New' size='3' color='white'>ul. Więzienna 21</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='black'>obok restauracji Tralalala Cafe</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Autor</font></B></td><td><font face='Courier New' size='3' color='white'>nieznany</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='black'>Stare Miasto</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Tralalalek/Tralalalek.jpg'><p><font face ='Courier New' size='1' color='white'>źródło: <a href='https://bit.ly/2PJyPv6' target='_blank'>https://bit.ly/2PJyPv6</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Autor modelu</font></B></td><td><font face='Courier New' size='3' color='black'>Natalia Jasiczak</font></td></tr></table>",
+    "position" : {
+        "cartographicDegrees" : [17.0324273, 51.1125361, 0]
+    },
+    "model": {
+        "gltf" : "Tralalalek/tralalalek.glb",
+        "scale" : 25.0,
+        "minimumPixelSize": 1
+    }
+    },
+    {
+    
+    "id" : "Meloman",
+    "name" : "Grajek i Meloman",
+"description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'>Adres</font></B></td><td><font face='Courier New' size='3' color='white'>ul. Oławska 10</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='black'>kwiaciarnia</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Autor</font></B></td><td><font face='Courier New' size='3' color='white'>Beata Zwolańska-Hołod</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='black'>Stare Miasto</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Meloman/Meloman_Grajek.jpg'><p><font face ='Courier New' size='1' color='white'>źródło: <a href='https://bit.ly/2DpaV2r' target='_blank'>https://bit.ly/2DpaV2r</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Autor modelu</font></B></td><td><font face='Courier New' size='3' color='black'>Meloman: Natalia Kania <br> Grajek: Karolina Bąkowicz </font></td></tr></table>",
+    "position" : {
+        "cartographicDegrees" : [17.0350400, 51.108636, 0]
+    },
+    "model": {
+        "gltf" : "Meloman/Meloman_Grajek.glb",
+        "scale" :25.0,
+        "minimumPixelSize": 1
+    }
+    },
+    {
+    
+    "id" : "Automatek",
+    "name" : "Automatek",
+    "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'>Adres</font></B></td><td><font face='Courier New' size='3' color='white'>ul. Krawiecka 1-3 </font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='black'>pl. Dominikański</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Autor</font></B></td><td><font face='Courier New' size='3' color='white'>Tomasz Moczek</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='black'>Stare Miasto</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Automatek/BEAnka.jpg'><p><font face ='Courier New' size='1' color='white'>źródło: <a href='https://bit.ly/2RKhzTZ' target='_blank'>https://bit.ly/2RKhzTZ</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Autor modelu</font></B></td><td><font face='Courier New' size='3' color='black'>Natalia Jasiczak <br> Krzysztof Knop </font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='white'>źródło: <a href='http://krasnale.pl/krasnal/wegielek/' target='_blank'>http://krasnale.pl/krasnal/wegielek/</a></font></td></tr></table>",
+    "position" : {
+        "cartographicDegrees" : [17.0381060, 51.1081640, 0]
+    },
+    "model": {
+        "gltf" : "Automatek/Automatek.glb",
+        "scale" : 1.0,
+        "minimumPixelSize": 1
+    }
+    },
+    {
+    
+    "id" : "Ekonomek",
+    "name" : "Ekonomek",
+    "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'>Adres</font></B></td><td><font face='Courier New' size='3' color='white'>ul. Komandorska 118/120 </font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='black'>Uniwersytet Ekonomiczny <br> budynek A1</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Autor</font></B></td><td><font face='Courier New' size='3' color='white'>Beata Zwolańska-Hołod</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='black'>Powstańców Śląskich</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Ekonomek/Ekonomek.jpg'><p><font face ='Courier New' size='1' color='white'>źródło: <a href='https://bit.ly/2RjJ0UX' target='_blank'>https://bit.ly/2RjJ0UX</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Autor modelu</font></B></td><td><font face='Courier New' size='3' color='black'>Natalia Jasiczak <br> Krzysztof Knop </font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='white'>źródło: <a href=http://krasnale.pl/krasnal/ekonomek/' target='_blank'>http://krasnale.pl/krasnal/ekonomek/</a></font></td></tr></table>",
+    "position" : {
+        "cartographicDegrees" : [17.0261092, 51.0904947, 0]
+    },
+    "model": {
+        "gltf" : "Ekonomek/Ekonomek4.glb",
+        "scale" : 10.0,
+        "minimumPixelSize": 1
+    }
+    },
+    {
+    
+    "id" : "WrocLovek",
+    "name" : "WrocLovek",
+    "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'>Adres</font></B></td><td><font face='Courier New' size='3' color='white'>ul. Odrzańska 39-40 </font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='black'>Towarzystwo Miłośników Wrocławia <br> kamieniczka 'Małgosi'</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Autor</font></B></td><td><font face='Courier New' size='3' color='white'>Beata Zwolańska-Hołod</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='black'>Stare Miasto</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/WrocLovek/WrocLovek.jpg'><p><font face ='Courier New' size='1' color='white'>źródło: <a href='https://bit.ly/2BmZPbO' target='_blank'>https://bit.ly/2BmZPbO</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Autor modelu</font></B></td><td><font face='Courier New' size='3' color='black'>Natalia Jasiczak</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='white'>źródło: <a href='http://krasnale.pl/krasnal/wroclovek/' target='_blank'>http://krasnale.pl/krasnal/wroclovek/</a></font></td></tr></table>",
+    "position" : {
+        "cartographicDegrees" : [17.0307613, 51.1111405, 0]
+    },
+    "model": {
+        "gltf" : "WrocLovek/WrocLovek.glb",
+        "scale" : 1.0,
+        "minimumPixelSize": 1
+    }
+    },
+    {
+    
+    "id" : "Rejestrus",
+    "name" : "Rejestruś",
+    "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'>Adres</font></B></td><td><font face='Courier New' size='3' color='white'>ul. Danuty Siedzikówny 12</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='black'>Krajowy Rejest Długów </font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Autor</font></B></td><td><font face='Courier New' size='3' color='white'>Marcin Łuczkowski</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='black'>Psie Pole</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Rejestrus/Rejestrus.jpg'><p><font face ='Courier New' size='1' color='white'>źródło: <a href='https://bit.ly/2BDOZ1n' target='_blank'>https://bit.ly/2BDOZ1n</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Autor modelu</font></B></td><td><font face='Courier New' size='3' color='black'>Adam Pałęcki</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='white'>źródło: <a href='http://krasnale.pl/krasnal/rejestrus/' target='_blank'>http://krasnale.pl/krasnal/rejestrus/</a></font></td></tr></table>",
+    "position" : {
+        "cartographicDegrees" : [17.1255390, 51.1538500, 0]
+    },
+    "model": {
+        "gltf" : "Rejestrus/Rejestrus.glb",
+        "scale" : 10.0,
+        "minimumPixelSize": 1
+    }
+    }
+    
+  
+
+    ]

@@ -1,0 +1,191 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+   
+    {
+      "type": "Feature",
+      "id": 1,
+      
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+            17.0325212,
+            51.1075476
+        ]
+      },
+      "properties": {
+        "title": "Papa Krasnal",
+        "marker-color": "#696969",
+        "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'>Adres</font></B></td><td><font face='Courier New' size='3' color='white'>ul. Świdnicka</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='black'>obok przejścia podziemnego</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Autor</font></B></td><td><font face='Courier New' size='3' color='white'>Olaf Brzeski</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='black'>Stare Miasto</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Zdjecia/Papa_krasnal.jpg'><p><font face ='Courier New' size='1' color='white'>źródło: <a href='https://bit.ly/2OqWkEL' target='_blank'>https://bit.ly/2OqWkEL</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='black'>źródło: <a href='http://krasnale.pl/krasnal/papa-krasnal/' target='_blank' style='color:black' >http://krasnale.pl/krasnal/papa-krasnal/</a></font></td></tr></table>"       
+      }
+    },
+    
+    {
+      "type": "Feature",
+      "id": 2,
+      
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+            17.0587140,
+            51.0950060
+        ]
+      },
+      "properties": {
+        "title": "100matolog",
+        "marker-color": "#2F4F4F",
+        "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'>Adres</font></B></td><td><font face='Courier New' size='3' color='white'>ul. Krakowska 26</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='black'>Wydział Lekarsko-Stomatologiczny<br>Uniwersytetu Medycznego <br> im. Piastów Śląskich</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Autor</font></B></td><td><font face='Courier New' size='3' color='white'>Beata Zwolańska-Hołod</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='black'>Przedmieście Oławskie</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Zdjecia/100matolog.jpg'><p><font face ='Courier New' size='1' color='white'>źródło: <a href='https://bit.ly/2SLXhe5' target='_blank'>https://bit.ly/2SLXhe5</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='black'>źródło: <a href='http://krasnale.pl/krasnal/100matolog/' target='_blank' style='color:black' >http://krasnale.pl/krasnal/100matolog/</a></font></td></tr></table>"       
+      }
+    },
+    
+         {
+      "type": "Feature",
+      "id": 3,
+      
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+            17.0215360,
+            51.1347470
+        ]
+      },
+     
+      "properties": {
+        "title": "Agorek",
+        "marker-color": "#BC8F8F",
+        "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'>Adres</font></B></td><td><font face='Courier New' size='3' color='white'>ul. Serbska 5A</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='black'>Centrum Kultury 'Agora'</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Autor</font></B></td><td><font face='Courier New' size='3' color='white'>Michał Staszczak</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='black'>Różanka</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Zdjecia/Agorek.jpg'><p><font face ='Courier New' size='1' color='white'>źródło: <a href='https://bit.ly/2DojD0X' target='_blank'>https://bit.ly/2DojD0X</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='black'>źródło: <a href='http://krasnale.pl/krasnal/agorek/' target='_blank' style='color:black'>http://krasnale.pl/krasnal/agorek/</a></font></td></tr></table>"       
+      }
+    },
+    
+   
+            {
+      "type": "Feature",
+      "id": 4,
+      
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+            16.9844940,
+            51.1128114
+        ]
+      },
+      "properties": {
+        "title": "Alpinki",
+        "marker-color": "#B8860B",
+        "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'></font></B></td><td><font face='Courier New' size='3' color='white'><ul style='list-style-type:disc'><br><li>Głazek</li><li>Zarembek</li><li>Rutek</li></ul></font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Adres</font></B></td><td><font face='Courier New' size='3' color='black'>ul. Strzegomska 46-56</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='white'>Wrocławski Park Biznesu</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Autor</font></B></td><td><font face='Courier New' size='3' color='black'>Tomasz Moczek</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='white'>Muchobór Mały</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Zdjecia/Alpinki.jpg'><p><font face ='Courier New' size='1' color='black'>źródło: <a href='https://bit.ly/2D2iPxA' target='_blank' style='color:black'>https://bit.ly/2D2iPxA</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='white'>źródło: <a href='http://krasnale.pl/krasnal/alpinki/' target='_blank' style='color:white'>http://krasnale.pl/krasnal/alpinki/</a></font></td></tr></table>"       
+      }
+    },
+    
+    
+            {
+      "type": "Feature",
+      "id": 4,
+      
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+            17.0316723,
+            51.1095810
+        ]
+      },
+      "properties": {
+        "title": "Ambasadorzy kampanii 'Wrocław bez barier'",
+        "marker-color": "#696969",
+        "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'></font></B></td><td><font face='Courier New' size='3' color='white'><ul style='list-style-type:disc'><br><li>Ślepak</li><li>Głuchak</li><li>W-Skers</li></ul></font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Adres</font></B></td><td><font face='Courier New' size='3' color='black'>Rynek Ratusz</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='white'>Muzeum Sztuki Mieszczańskiej</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Autor</font></B></td><td><font face='Courier New' size='3' color='black'>Marta Mirynowska</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='white'>Stare Miasto</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Zdjecia/slepak.JPG'><p><font face ='Courier New' size='1' color='black'>źródło: <a href='https://bit.ly/2JHj56w' target='_blank' style='color:black'>https://bit.ly/2JHj56w</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='white'>źródło: <a href='http://krasnale.pl/krasnal/slepak-i-gluchak/' target='_blank' style='color:white'>http://krasnale.pl/krasnal/slepak-i-gluchak/</a></font></td></tr></table>"       
+      }
+    },
+    
+    
+            {
+      "type": "Feature",
+      "id": 5,
+      
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        17.0813110,
+            51.0926610
+            
+        ]
+      },
+      "properties": {
+        "title": "Amrest",
+        "marker-color": "#2F4F4F",
+        "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='black'>Adres</font></B></td><td><font face='Courier New' size='3' color='black'>ul. Międzyrzecka 4</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='white'>Pałac Hollenderów</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Autor</font></B></td><td><font face='Courier New' size='3' color='black'>Grzegorz Łagowski</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='white'>Przedmieście Oławskie</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Zdjecia/Amrest.JPG'><p><font face ='Courier New' size='1' color='black'>źródło: <a href='https://bit.ly/2FbWNv5' target='_blank' style='color:black'>https://bit.ly/2FbWNv5</a></font></p></td></tr></table>"       
+      }
+    },
+    
+    
+            {
+      "type": "Feature",
+      "id": 6,
+      
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+            17.0194280,
+            51.1109360
+        ]
+      },
+      "properties": {
+        "title": "Anka",
+        "marker-color": "#0033FF",
+        "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'>Adres</font></B></td><td><font face='Courier New' size='3' color='white'>ul. Sokolnicza 7/17 <br> pawilon 37</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='black'>Galeria Panny Młodej <br> 'Bellissima'</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Autor</font></B></td><td><font face='Courier New' size='3' color='white'>Tomasz Moczek</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='black'>Szczepin</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Zdjecia/Anka.jpg'><p><font face ='Courier New' size='1' color='white'>źródło: <a href='https://bit.ly/2PMKBoF' target='_blank'>https://bit.ly/2PMKBoF</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='black'>źródło: <a href='http://krasnale.pl/krasnal/anka/' target='_blank' style='color:black'>http://krasnale.pl/krasnal/anka//</a></font></td></tr></table>"      
+      }
+    },
+    
+    
+            {
+      "type": "Feature",
+      "id": 7,
+      
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+            17.0525,
+            51.1163889
+        ]
+      },
+      "properties": {
+        "title": "Antonio Okulista",
+        "marker-color": "#696969",
+        "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'>Adres</font></B></td><td><font face='Courier New' size='3' color='white'>ul. Sienkiewicza 33a <br> pawilon 37</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='black'>Wrocławskie Centrum <br> Okulistyczne</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Autor</font></B></td><td><font face='Courier New' size='3' color='white'>Jan Żelbromski</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='black'>Stare Miasto</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Zdjecia/Antonio.jpg'><p><font face ='Courier New' size='1' color='white'>źródło: <a href='https://bit.ly/2PfyukA' target='_blank'>https://bit.ly/2PfyukA</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='black'>źródło: <a href='http://krasnale.pl/krasnal/antonio-okulista/' target='_blank' style='color:black'>http://krasnale.pl/krasnal/antonio-okulista/</a></font></td></tr></table>"      
+      }
+    },
+    
+    
+            {
+      "type": "Feature",
+      "id": 8,
+      
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+            17.0304140, 51.1021280
+        ]
+      },
+      "properties": {
+        "title": "Antykwarek",
+        "marker-color": "#009999",
+        "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'>Adres</font></B></td><td><font face='Courier New' size='3' color='white'>plac Tadeusza Kościuszki 15 </font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='black'>Antykwariat 'DAES'</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Autor</font></B></td><td><font face='Courier New' size='3' color='white'>Tomasz Moczek</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='black'>Przedmieście Świdnickie</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Zdjecia/Antykwarek.jpg'><p><font face ='Courier New' size='1' color='white'>źródło: <a href='https://bit.ly/2RDjZUr' target='_blank'>https://bit.ly/2RDjZUr</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='black'>źródło: <a href='http://krasnale.pl/krasnal/antykwarek/' target='_blank' style='color:black'>http://krasnale.pl/krasnal/antykwarek/</a></font></td></tr></table>"      
+      }
+    },
+    
+            {
+      "type": "Feature",
+      "id": 9,
+      
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+            17.0331852, 51.0907513
+        ]
+      },
+      "properties": {
+        "title": "Aquaparczki",
+        "marker-color": "#660033",
+        "description": "<table class='cesium-infoBox-defaultTable' align = 'cente' valign = 'middle'><tr><td><B><font face='Courier New' size='3' color='white'></font></B></td><td><font face='Courier New' size='3' color='white'><ul style='list-style-type:disc'><br><li>Moczypięta</li><li>Chlapibrzuch</li></ul></font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Adres</font></B></td><td><font face='Courier New' size='3' color='black'>ul. Borowska 99</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Lokalizacja</font></B></td><td><font face='Courier New' size='3' color='white'>Aquapark Wrocław</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Autor</font></B></td><td><font face='Courier New' size='3' color='black'>Tomasz Moczek</font></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>Dzielnica</font></B></td><td><font face='Courier New' size='3' color='white'>Huby</font></td></tr><tr><td><B><font face='Courier New' size='3' color='black'>Zdjęcie</font></B></td><td><img height='220' width='146' src='modele/Zdjecia/Aquaparczki.JPG'><p><font face ='Courier New' size='1' color='black'>źródło: <a href='https://bit.ly/2B1F8lP' target='_blank' style='color:black'>https://bit.ly/2B1F8lP</a></font></p></td></tr><tr><td><B><font face='Courier New' size='3' color='white'>O krasnalu</font></B></td><td><font face='Courier New' size='1' color='white'>źródło: <a href='http://krasnale.pl/krasnal/chlapibrzuch-i-moczypieta/' target='_blank' style='color:white'>http://krasnale.pl/krasnal/chlapibrzuch-i-moczypieta/</a></font></td></tr></table>"       
+      }
+    }
+  ]
+}
